@@ -1,0 +1,140 @@
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 20px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 535px;
+    height: 400px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    max-width: 900px;
+}
+
+.cardContainer .perfumeImg-desktop {
+    height: 400px;
+    width: 265px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+    height: 350px;
+}
+
+.cardContent h1 {
+    margin: 0;
+    font-family: "Fraunces", serif;
+    line-height: 30px;
+}
+
+.cardContent p {
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+}
+
+.cardContent .heading {
+    font-size: 14px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: hsl(228, 12%, 48%);
+}
+
+.cardContent .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+.cardContent .actualPrice {
+    font-size: 12px;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+.cardContent .discountPrice {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Fraunces", serif;
+    color: hsl(158, 36%, 37%);
+}
+
+.cardContent a {
+    text-decoration: none;
+    background-color: hsl(158, 36%, 37%);
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 0;
+    border-radius: 6px;
+
+}
+
+.cardContent a:hover {
+    background-color: hsl(212, 21%, 14%);
+}
+
+@media only screen and (max-width: 700px) {
+    .cardContainer {
+        flex-direction: column;
+        width: 22rem;
+        height: 39rem;
+    }
+
+    .cardContainer .perfumeImg-desktop {
+        max-height: 250px;
+        width: 100%;
+        object-fit: cover;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .cardContent .actualPrice {
+        font-size: 16px;
+    }
+
+    .cardContent .discountPrice {
+        font-size: 28px;
+    }
+
+    .cardContent .price {
+        width: 65%;
+        margin-bottom: 0;
+    }
+
+    .cardContent p {
+        margin: 0;
+    }
+
+    .cardContent {
+        justify-content: space-around;
+    }
+}
